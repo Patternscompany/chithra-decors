@@ -1,12 +1,12 @@
 // Sample product data
 const products = {
     1: {
-      title: "Product 1",
+      title: "Roller Blinds",
       image: "img/products/roller-blinds.png",
       description: "TRoller Blinds are a type of window covering that consists of a single piece of fabric that rolls up and down to cover or uncover a window. They are available in various materials, colors, and patterns, making them a versatile choice for home decor."
     },
     2: {
-      title: "Product 2",
+      title: "Chairs",
       image: "img/products/chair.png",
       description: "A chair is a piece of furniture designed for sitting, typically consisting of a seat, backrest, and legs. Chairs come in various styles, materials, and designs, serving both functional and aesthetic purposes in homes and offices."
     },
