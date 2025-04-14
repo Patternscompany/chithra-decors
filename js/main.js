@@ -174,7 +174,17 @@
         }
       });
 
-
+      const btn0 = document.querySelector(".nav-item.dropdown");
+      const btn3 = document.querySelector(".nav-link");
+      btn0.addEventListener("click", () => {
+        btn0.classList.toggle("active");
+        btn3.classList.remove("active");
+      });
+      const btn1 = document.querySelector("li.drop-down1");
+      btn1.addEventListener("click", () => {
+        btn1.classList.toggle("active");
+        btn0.classList.remove("active");
+      });
     
 })(jQuery);
 

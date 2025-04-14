@@ -2977,9 +2977,9 @@ input[type="button"].btn-block {
   }
 }
 
-.fade:not(.show) {
+/* .fade:not(.show) {
   opacity: 0;
-}
+} */
 
 .collapse:not(.show) {
   display: none;
@@ -3025,22 +3025,23 @@ input[type="button"].btn-block {
 }
 
 .dropdown-menu {
-  position: absolute;
+  /* position: absolute;
   top: 100%;
   left: 0;
   z-index: 1000;
   display: none;
   float: left;
   min-width: 10rem;
+  min-height: fit-content;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #777777;
   text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  list-style: none; */
+  /* background-color: #fff; */
+  /* background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15); */
 }
 
 .dropdown-menu-left {
@@ -3226,9 +3227,9 @@ input[type="button"].btn-block {
   background-color: transparent;
 }
 
-.dropdown-menu.show {
+/* .dropdown-menu.show {
   display: block;
-}
+} */
 
 .dropdown-header {
   display: block;
@@ -9739,4 +9740,163 @@ h6 {
 .bg-cover{
   background: url(/img/carousel-1.jpg);
   background-position: center;
+}
+.nav-item.dropdown .drop-items {
+  position: absolute;
+  padding: 0 ;
+  background-color: maroon;
+  z-index: 999;
+
+  display: none;
+  margin-left: 20px;
+  transition: 1s ease-in-out;
+
+/* background: url(/images/background-image1.png);
+background-position: center; */
+}
+
+.nav-item.dropdown .drop-items li {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-bottom: 1px solid white;
+  width: 200px;
+  list-style-type: none  !important;;
+}
+
+.nav-item.dropdown .drop-items li:hover {
+  background-color: #f98d06;
+}
+
+.nav-item.dropdown .drop-items li a {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-item.dropdown:hover .drop-items {
+  display: block;
+  transition: 1s ease-in-out;
+}
+li.dropdown .d {
+  border-width: 10px;
+  border-radius: 10px;
+  border-color: red;
+}
+
+li.drop-down1 {
+  position: relative;
+  list-style-type: none;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-bottom: 1px solid white;
+}
+
+li.drop-down1 .drop-items1 {
+  position: absolute;
+  padding: 0;
+  background-color: maroon;
+  z-index: 999;
+  top: 0;
+  left: 100%;
+  display: none;
+  transition: 1s ease-in-out;
+}
+div.link{
+    font-size: 16px;
+  padding: 5px 10px;
+color: white;
+}
+li.drop-down1 .drop-items1 li {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-bottom: 1px solid white;
+  width: 200px;
+  list-style-type: none;
+}
+
+.drop-down1 .drop-items1 li:hover {
+  background-color: #f98d06;
+}
+
+.drop-down1 .drop-items1 li .link {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.drop-down1:hover .drop-items1 {
+  display: block;
+  transition: 1s ease-in-out;
+}
+.drop-down1.active .drop-items1 {
+  display: block;
+  transition: 1s ease-in-out;
+}
+.d-plus {
+  display: none;
+}
+@media (max-width: 992px) {
+  .d-plus {
+    display: block;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .d-arrow {
+    display: none;
+  }
+
+  li.drop-down1 .drop-items1 li:hover {
+    background-color: unset;
+  }
+
+  li.drop-down1 .drop-items1 {
+    position: unset;
+    background-color: #d32618;
+  }
+
+  .li.drop-down1 .drop-items1 li {
+    width: 100%;
+  }
+
+  .nav-item.dropdown .drop-items li {
+    width: 100%;
+  }
+  .navbar-collapse{
+    height: 50vh !important;
+    overflow-y: scroll  !important;
+  }
+  .nav-item.dropdown .drop-items {
+    position: unset;
+    background-color: #f98d06;
+  }
+
+  .nav-item.dropdown .drop-items li:hover {
+    background-color: unset;
+  }
+
+  li.drop-down1:hover .drop-items1 {
+    display: none;
+  }
+
+  .nav-item.dropdown:hover .drop-items {
+    display: none;
+  }
+
+  li.drop-down1.active .drop-items1 {
+    display: block;
+    transition: 1s ease-in-out;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    border-bottom: 1px solid white;
+  }
+
+  .nav-item.dropdown.active .drop-items {
+    display: block;
+    transition: 1s ease-in-out;
+  }
 }
