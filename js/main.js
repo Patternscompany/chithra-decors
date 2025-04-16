@@ -185,6 +185,25 @@
         btn1.classList.toggle("active");
         btn0.classList.remove("active");
       });
-    
+      const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
+});
+document.addEventListener('mouseover', (e) => {
+  if (e.target.matches('a, button')) {
+    cursor.classList.add('hover');
+  } else {
+    cursor.classList.remove('hover');
+  }
+});
+document.addEventListener('click', () => {
+  cursor.classList.add('expand');
+  setTimeout(() => {
+    cursor.classList.remove('expand');
+  }, 500);
+});
+
+   
 })(jQuery);
 
