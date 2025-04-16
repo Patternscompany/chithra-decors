@@ -186,6 +186,7 @@
         btn0.classList.remove("active");
       });
       const cursor = document.querySelector('.custom-cursor');
+      const anchor = document.querySelector('a');
 
 document.addEventListener('mousemove', (e) => {
   cursor.style.transform = `translate(${e.clientX - 20}px, ${e.clientY - 20}px)`;
@@ -193,6 +194,8 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mouseover', (e) => {
   if (e.target.matches('a, button')) {
     cursor.classList.add('hover');
+    anchor.style.color = '#fff !important';
+    anchor.style.transition = '0.5s ease-in-out';
   } else {
     cursor.classList.remove('hover');
   }

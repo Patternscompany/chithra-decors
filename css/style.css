@@ -84,7 +84,7 @@ body {
   left: 0;
   width: 25px;
   height: 25px;
-  background-color: #d32618;
+  /* background-color: #d32618; */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -95,6 +95,8 @@ body {
   width: 40px;
   height: 40px;
   background-color: transparent;
+  transform: scale(0.5);
+  transition: transform 0.05s linear;
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
